@@ -2,22 +2,6 @@
 
 A production-ready inventory demand forecasting system that combines classical statistics, machine learning, and deep learning — with full explainability powered by SHAP.
 
----
-
-## 🎯 What It Does
-
-Most forecasting systems tell you **what** demand will be. This system also tells you **why** — which features drove each prediction, how confident the model is, and where each model wins or loses.
-
-| Capability | Detail |
-|---|---|
-| **Forecasting** | Daily demand per SKU × Warehouse |
-| **Explainability** | SHAP global importance + per-prediction waterfall |
-| **Models** | LightGBM · SARIMA · TFT · Ensemble |
-| **Dashboard** | 5-page interactive Streamlit app |
-| **Data** | 10 SKUs × 3 Warehouses × 3 Years (32,880 rows) |
-
----
-
 ## 🏗️ Architecture
 
 ```
@@ -69,34 +53,6 @@ Stock_Mind/
 │       └── explainability.py   # SHAP analysis + charts
 ├── requirements.txt
 └── runtime.txt
-```
-
----
-
-## 🚀 Quick Start
-
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/kumkum-kaushik/StockMind.git
-cd StockMind
-```
-
-### 2. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the dashboard
-
-```bash
-streamlit run dashboard/app.py
-```
-
-Open **http://localhost:8501** in your browser.
-
----
 
 ## 🔄 Reproducing the Full Pipeline
 
